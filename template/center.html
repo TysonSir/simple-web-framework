@@ -1,0 +1,33 @@
+
+
+<h1>center.html</h1>
+<p>
+
+{%content%}
+</p>
+
+<table class="table">
+
+
+</table>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+$.get("api/center_data.html", function (data) {
+
+var data_array = data;
+
+    var $table = $(".table")
+    for(var i = 0; i < data_array.length; i++){
+        var center_obj = data_array[i];
+        var row_html = '<tr>' +
+            '<td>'+ center_obj.host +'</td>' +
+            '<td>'+ center_obj.user +'</td>' +
+            '<td>'+ center_obj.passwd +'</td>' +
+            '<td>'+ center_obj.plugin +'</td>' +
+            '<td><a type="button" </td></tr>';
+        $table.append(row_html);
+}
+        alert(data);
+    }, "json");
+</script>

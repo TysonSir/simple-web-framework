@@ -1,0 +1,9 @@
+http://localhost:8800/images/taichi.jpg
+http://localhost:8800/framework_base.zip
+
+http://localhost:8800/time_now.html
+http://localhost:8800/index.html
+
+http://localhost:8800/dbinfo.html
+http://localhost:8800/center.html
+http://localhost:8800/api/center_data.html
