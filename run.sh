@@ -1,4 +1,4 @@
 cd ./framework
-python web.py 8800
+python3 web.py 8800
 
 

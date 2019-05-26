@@ -1,9 +1,17 @@
+#encoding=utf-8
 """miniweb框架，负责处理动态资源请求"""
 import sys
+import os
 import route
 
 # 控制器函数文件——开始
 sys.path.append("..\controller")
+# Linux 上路径错误
+pwd = os.getcwd()
+father_path = os.path.abspath(os.path.dirname(pwd)+os.path.sep+".")
+sys.path.append(father_path + "/controller")
+print(sys.path)
+
 import index_controller
 import db_controller
 

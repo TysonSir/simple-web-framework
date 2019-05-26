@@ -1,3 +1,4 @@
+#encoding=utf-8
 # 定义路由列表
 route_list = []
 
